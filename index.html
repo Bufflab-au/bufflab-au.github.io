@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105450105"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18105450105');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buff Lab | Ceramic Coating & Cut & Polish — Brisbane</title>
+<meta name="description" content="Professional ceramic coating and machine cut & polish in Brisbane. Mobile service. Free quotes. Book today.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #0d0d0d;
+  --dark: #161616;
+  --card: #1e1e1e;
+  --white: #f0ede8;
+  --gold: #d4a843;
+  --gold2: #e8c06a;
+  --red: #c0392b;
+  --muted: rgba(240,237,232,0.5);
+  --border: rgba(212,168,67,0.15);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+/* ======= STICKY PHONE BAR ======= */
+.sticky-call {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  background: var(--gold);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+}
+.sticky-call span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--black);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.sticky-call svg {
+  width: 20px; height: 20px;
+  fill: var(--black);
+  animation: ring 2s infinite;
+}
+@keyframes ring {
+  0%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(-15deg); }
+  20% { transform: rotate(15deg); }
+  30% { transform: rotate(0deg); }
+}
+
+/* ======= NAV ======= */
+nav {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(13,13,13,0.95);
+  backdrop-filter: blur(10px);
+}
+.logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.logo span { color: var(--gold); }
+.nav-phone {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.nav-phone svg { width: 16px; height: 16px; fill: var(--gold); }
+
+/* ======= HERO ======= */
+.hero {
+  position: relative;
+  padding: 3rem 1.5rem 4rem;
+  overflow: hidden;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 120% 80% at 50% 100%, rgba(212,168,67,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(192,57,43,0.04) 0%, transparent 50%);
+}
+.hero-lines {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(212,168,67,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212,168,67,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(212,168,67,0.1);
+  border: 1px solid rgba(212,168,67,0.3);
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.35rem 0.8rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: fit-content;
+}
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(3.2rem, 14vw, 6rem);
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.hero h1 .line2 {
+  color: var(--gold);
+  display: block;
+}
+.hero h1 .line3 {
+  -webkit-text-stroke: 1.5px var(--white);
+  color: transparent;
+  display: block;
+}
+.hero-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 400px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.hero-sub strong { color: var(--white); }
+
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+  max-width: 340px;
+}
+.btn-primary {
+  background: var(--gold);
+  color: var(--black);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: background 0.2s, transform 0.1s;
+  border: none; cursor: pointer;
+}
+.btn-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  border: 1.5px solid rgba(240,237,232,0.2);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: border-color 0.2s;
+}
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  position: relative;
+  flex-wrap: wrap;
+}
+.stat { }
+.stat-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+}
+
+/* ======= SERVICES ======= */
+.section {
+  padding: 3.5rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.section-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+.section h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.section h2 span { color: var(--gold); }
+.section-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.service-card {
+  background: var(--card);
+  padding: 1.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s;
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.service-card:hover { background: #222; }
+.service-card:hover::before { transform: scaleX(1); }
+.service-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.service-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.service-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+.service-price {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+}
+.service-includes {
+  margin-top: 1rem;
+  list-style: none;
+}
+.service-includes li {
+  font-size: 0.8rem;
+  color: rgba(240,237,232,0.55);
+  padding: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.service-includes li:last-child { border: none; }
+.service-includes li::before {
+  content: '✓';
+  color: var(--gold);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+/* ======= WHY BUFF LAB ======= */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.why-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.3rem;
+}
+.why-icon { font-size: 1.5rem; margin-bottom: 0.6rem; }
+.why-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+.why-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+
+/* ======= QUOTE FORM ======= */
+.form-section {
+  padding: 3.5rem 1.5rem 6rem;
+  border-top: 1px solid var(--border);
+  background: var(--dark);
+}
+.form-section .section-label { }
+.form-section h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.form-section h2 span { color: var(--gold); }
+.form-section p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 480px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.field label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(240,237,232,0.5);
+}
+.field input,
+.field select,
+.field textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1.5px solid rgba(255,255,255,0.08);
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  color: var(--white);
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+  width: 100%;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(212,168,67,0.04);
+}
+.field input::placeholder,
+.field textarea::placeholder { color: rgba(240,237,232,0.2); }
+.field select option { background: #1e1e1e; }
+.field textarea { resize: none; height: 90px; }
+
+.form-submit {
+  background: var(--gold);
+  color: var(--black);
+  padding: 1.1rem;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 0.3rem;
+}
+.form-submit:hover { background: var(--gold2); transform: translateY(-1px); }
+.form-note {
+  font-size: 0.73rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+/* ======= PROCESS ======= */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+  position: relative;
+}
+.process-steps::before {
+  content: '';
+  position: absolute;
+  left: 19px; top: 0; bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+.process-step {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.2rem 0;
+  position: relative;
+}
+.step-num {
+  width: 40px; height: 40px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--gold);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.step-content { padding-top: 0.5rem; }
+.step-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.2rem;
+}
+.step-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+/* ======= REVIEWS ======= */
+.reviews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.review-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.4rem;
+}
+.review-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 0.5rem; }
+.review-text {
+  font-size: 0.85rem;
+  color: rgba(240,237,232,0.7);
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+.review-author {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ======= AREAS ======= */
+.areas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+.area-tag {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: rgba(240,237,232,0.6);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: 100px;
+  letter-spacing: 0.3px;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background: #0a0a0a;
+  border-top: 1px solid var(--border);
+  padding: 2rem 1.5rem 5rem;
+  text-align: center;
+}
+.footer-logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.footer-logo span { color: var(--gold); }
+.footer-tagline { font-size: 0.8rem; color: var(--muted); margin-bottom: 1.5rem; }
+.footer-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+.footer-copy { font-size: 0.72rem; color: rgba(240,237,232,0.2); margin-top: 1.5rem; }
+
+/* ======= SUCCESS MESSAGE ======= */
+.form-success {
+  display: none;
+  background: rgba(212,168,67,0.08);
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 480px;
+}
+.form-success h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.form-success p { font-size: 0.9rem; color: var(--muted); }
+
+/* ======= ANIMATIONS ======= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 600px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .reviews-grid { display: grid; grid-template-columns: 1fr 1fr; }
+  .why-grid { grid-template-columns: repeat(4, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY CALL BUTTON -->
+<a href="tel:+61452282282" class="sticky-call">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  <span>Call Now — Free Quote</span>
+</a>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Buff <span>Lab</span></div>
+  <a href="tel:+61452282282" class="nav-phone">
+    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    0452 282 282
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-badge">
+    <div class="badge-dot"></div>
+    Brisbane Mobile Service
+  </div>
+
+  <h1>
+    Paint<br>
+    <span class="line2">Protection</span>
+    <span class="line3">Specialists.</span>
+  </h1>
+
+  <p class="hero-sub">
+    <strong>Ceramic coating and machine cut & polish</strong> — delivered to your driveway. We don't do basic washes. Just serious paint protection done properly.
+  </p>
+
+  <div class="hero-cta-group">
+    <a href="#quote" class="btn-primary">Get a Free Quote →</a>
+    <a href="tel:+61452282282" class="btn-secondary">📞 Call Now</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">5★</div>
+      <div class="stat-label">Rated Service</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Mobile</div>
+      <div class="stat-label">We Come To You</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Free</div>
+      <div class="stat-label">No-Obligation Quote</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="section-label">// What We Do</div>
+  <h2>Our <span>Services</span></h2>
+  <p class="section-sub">We specialise in two things and do them exceptionally well. No interior cleans, no basic washes — just real paint correction and protection.</p>
+
+  <div class="services-grid fade-in">
+
+    <div class="service-card">
+      <span class="service-icon">💎</span>
+      <div class="service-name">Ceramic Coating</div>
+      <p class="service-desc">Industrial-grade ceramic protection that bonds to your paint and lasts years — not weeks. Hydrophobic, UV protected and guards against paint fade.</p>
+      <div class="service-price">From $1,150 + GST</div>
+      <ul class="service-includes">
+        <li>Full paint decontamination</li>
+        <li>Machine polish prep</li>
+        <li>Professional ceramic application</li>
+        <li>5 year protection warranty</li>
+        
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">✨</span>
+      <div class="service-name">Machine Cut & Polish</div>
+      <p class="service-desc">Remove swirl marks, oxidation, light scratches and dull paint. Machine polishing restores your paint's true depth and gloss.</p>
+      <div class="service-price">From $350 + GST</div>
+      <ul class="service-includes">
+        <li>Full exterior wash & clay</li>
+        <li>Contamination removal</li>
+        <li>Machine polishing</li>
+        <li>Paint sealant finish</li>
+        
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY BUFF LAB -->
+<section class="section">
+  <div class="section-label">// Why Buff Lab</div>
+  <h2>We Do It <span>Right.</span></h2>
+  <p class="section-sub">No shortcuts. No upsells. Just a proper job done by someone who takes paint seriously.</p>
+
+  <div class="why-grid fade-in">
+    <div class="why-card">
+      <div class="why-icon">🚗</div>
+      <div class="why-title">Mobile</div>
+      <p class="why-desc">We come to your home or workplace. No need to drop your car off.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🎯</div>
+      <div class="why-title">Specialist</div>
+      <p class="why-desc">We only do cut & polish and ceramic coating. That's it. We're very good at it.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">✅</div>
+      <div class="why-title">Guaranteed</div>
+      <p class="why-desc">All ceramic coatings come with a written warranty. No gimmicks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="section-label">// Process</div>
+  <h2>How It <span>Works</span></h2>
+  <p class="section-sub">Simple, fast, and done at your place.</p>
+
+  <div class="process-steps fade-in">
+    <div class="process-step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <div class="step-title">Get a Free Quote</div>
+        <p class="step-desc">Fill in the form below or call us. We'll give you an honest price based on your vehicle and condition — no surprises.</p>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <div class="step-title">Book a Time</div>
+        <p class="step-desc">We'll lock in a date that suits you. We come to your home, driveway, or workplace — wherever works best.</p>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <div class="step-title">We Come to You</div>
+        <p class="step-desc">Our fully equipped mobile setup arrives. You don't need to do anything — just go about your day.</p>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <div class="step-title">Admire the Results</div>
+        <p class="step-desc">We walk you through what was done and leave you with a protected, gleaming car.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+  <div class="section-label">// Reviews</div>
+  <h2>What Customers <span>Say</span></h2>
+
+  <div class="reviews-grid fade-in">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Absolutely blew me away. My car looks better than when I bought it. The ceramic coating is insane — water just beads straight off."</p>
+      <div class="review-author">— Mark T. · Sunnybank</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Couldn't believe the difference the cut and polish made. Swirl marks completely gone. Worth every cent and they came to my driveway."</p>
+      <div class="review-author">— Sarah K. · Runcorn</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Had my daily driver done with ceramic coating. Super professional, very thorough, explained everything clearly. Highly recommend."</p>
+      <div class="review-author">— Dale M. · Mount Gravatt</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Quick to respond, fair price, did an amazing job on my SUV. The paint looks factory fresh. Will be back for the next car."</p>
+      <div class="review-author">— Jenny L. · Eight Mile Plains</div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="section">
+  <div class="section-label">// Service Areas</div>
+  <h2>Brisbane & <span>Surrounds</span></h2>
+  <p class="section-sub">We cover Brisbane Southside, inner suburbs and surrounds. Not sure if we come to you? Just ask.</p>
+  <div class="areas-list fade-in">
+    <span class="area-tag">Kuraby</span>
+    <span class="area-tag">Sunnybank</span>
+    <span class="area-tag">Sunnybank Hills</span>
+    <span class="area-tag">Runcorn</span>
+    <span class="area-tag">Calamvale</span>
+    <span class="area-tag">Stretton</span>
+    <span class="area-tag">Wishart</span>
+    <span class="area-tag">Mount Gravatt</span>
+    <span class="area-tag">Rochedale</span>
+    <span class="area-tag">Eight Mile Plains</span>
+    <span class="area-tag">Macgregor</span>
+    <span class="area-tag">Salisbury</span>
+    <span class="area-tag">Moorooka</span>
+    <span class="area-tag">Stones Corner</span>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section class="form-section" id="quote">
+  <div class="section-label">// Get a Quote</div>
+  <h2>Free <span>Quote</span></h2>
+  <p>Fill in the form and we'll get back to you within a few hours. No obligation, no pressure.</p>
+
+  <form class="quote-form" id="quoteForm" action="https://formspree.io/f/xpqkllle" method="POST">
+    <div class="form-row">
+      <div class="field">
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Jason" required>
+      </div>
+      <div class="field">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="04xx xxx xxx" required>
+      </div>
+    </div>
+    <div class="field">
+      <label>Suburb</label>
+      <input type="text" name="suburb" placeholder="Kuraby, Brisbane" required>
+    </div>
+    <div class="form-row">
+      <div class="field">
+        <label>Vehicle</label>
+        <input type="text" name="vehicle" placeholder="e.g. BMW X5 2021">
+      </div>
+      <div class="field">
+        <label>Service</label>
+        <select name="service" required>
+          <option value="" disabled selected>Select...</option>
+          <option>Ceramic Coating</option>
+          <option>Machine Cut & Polish</option>
+          <option>Both — Cut & Polish + Ceramic</option>
+          <option>Not sure — need advice</option>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <label>Anything else? (optional)</label>
+      <textarea name="message" placeholder="e.g. car has swirl marks, paint hasn't been treated before..."></textarea>
+    </div>
+    <button type="submit" class="form-submit">Send My Quote Request →</button>
+    <p class="form-note">🔒 We'll never spam you. Usually respond same day.</p>
+  </form>
+
+  <div class="form-success" id="formSuccess">
+    <h3>✅ Quote Sent!</h3>
+    <p>Thanks! We'll be in touch within a few hours. If you need us urgently, call <strong>0452 282 282</strong>.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Buff <span>Lab</span></div>
+  <p class="footer-tagline">Mobile Ceramic Coating & Cut & Polish — Brisbane</p>
+  <a href="tel:+61452282282" class="footer-phone">📞 0452 282 282</a>
+  <p class="footer-copy">© 2026 Buff Lab · Brisbane, Queensland · ABN XX XXX XXX XXX</p>
+</footer>
+
+<script>
+  // Form submit via Formspree
+  document.getElementById('quoteForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = this;
+    const data = new FormData(form);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        window.location.href = '/thankyou.html';
+      } else {
+        alert('Something went wrong. Please call us on 0452 282 282.');
+      }
+    } catch (err) {
+      alert('Something went wrong. Please call us on 0452 282 282.');
+    }
+  });
+
+  // Fade in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
