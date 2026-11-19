@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bufflab-au.github.io/sitemap.xml
